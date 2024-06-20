@@ -16,7 +16,7 @@ Weather App: https://js-and-react-practice-7ke6.vercel.app
 ------------
 
 
-Netflix Clone: TODO
+Netflix Clone: https://js-and-react-practice-59rp.vercel.app
 
 ------------
 
