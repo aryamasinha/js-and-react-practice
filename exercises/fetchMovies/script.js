@@ -1,10 +1,9 @@
-console.log("YOOO")
-var firstName = 'Nazariy'
+
+var firstName = 'aryama'
 let apiUrl = 'http://localhost:3000'
 if (location.href.indexOf('netlify') != -1) {
   apiUrl = 'https://netflix-cp.herokuapp.com'
 }
-
 
 window.onload = () => {
   getOriginals()
@@ -37,12 +36,12 @@ function getWishList() {
     })
 }
 
-function letVarExample(firstName = 'Nazariy') {
-  // Melissas Address
+function letVarExample(firstName = 'aryama') {
+  
   const address = {
-    street: '9879 Test rd.',
-    city: 'Brooklyn',
-    state: 'NY',
+    street: 'test',
+    city: 'test',
+    state: 'test',
   }
 }
 
@@ -85,6 +84,7 @@ const handleMovieSelection = e => {
     setTrailer(youtubeTrailers)
   })
 
+  
   $('#trailerModal').modal('show')
 }
 
@@ -136,6 +136,7 @@ function fetchMovies(url, element_selector, path_type) {
 
 function showMoviesGenres(genres) {
   genres.genres.forEach(function (genre) {
+   
     var movies = fetchMoviesBasedOnGenre(genre.id)
     movies
       .then(function (movies) {
@@ -144,6 +145,7 @@ function showMoviesGenres(genres) {
       .catch(function (error) {
         console.log('BAD BAD', error)
       })
+    
   })
 }
 
